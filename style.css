@@ -11,3 +11,48 @@
   margin: 120px auto;
   display: flex;
 }
+
+/* Divide Category colums with equal space */
+.col {
+  height: 100%;
+  flex: 1; /*flex 1 to occupy equal space on page */
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.col:nth-child(1) {
+  background: #f18648;
+}
+
+.col:nth-child(2) {
+  background: #f18684;
+}
+
+.col:nth-child(3) {
+  background: #283491;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cap {
+  max-width: 230px;
+  font-size: 12px;
+  margin: 28px 0;
+}
+
+.cap button {
+  border: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  padding: 8px 18px;
+  color: #ffffff;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
