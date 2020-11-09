@@ -19,6 +19,8 @@
   color: #ffffff;
   box-sizing: border-box;
   padding: 25px;
+  position: relative; /*Is the PARENT & corresponds to .col img (below) */
+  transition: 0.7s;
 }
 
 .col:nth-child(1) {
@@ -43,6 +45,7 @@ h2 {
   max-width: 230px;
   font-size: 12px;
   margin: 28px 0;
+  display: none;
 }
 
 .cap button {
@@ -55,4 +58,24 @@ h2 {
   margin-top: 20px;
   cursor: pointer;
   font-size: 12px;
+}
+
+/* Image styling */
+.col img {
+  width: 200px;
+  position: absolute; /* must be set as a "relative" to the parent .col (above) */
+  right: 0;
+  bottom: 0;
+}
+
+.col:hover {
+  flex-grow: 2.5; /* width of each col expands on hover */
+}
+
+.col:hover .cap {
+  display: block; /*displays caption on hover */
+}
+
+.col:hover h2 {
+  text-align: left; /*title/H2 will move to the left along with the caption on hover */
 }
