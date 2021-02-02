@@ -4,6 +4,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  background: #111;
+}
+
 .container {
   width: 1000px;
   height: 400px;
